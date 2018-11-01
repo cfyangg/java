@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <servlet>
+    <servlet-name>ValidateEmail</servlet-name>
+    <servlet-class>cn.tf.controller.ValidateEmail</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>cn.tf.controller.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<servlet-class>cn.tf.controller.AdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UploadPhoto</servlet-name>
+  	<servlet-class>cn.tf.controller.UploadPhoto</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/servlet/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ValidateEmail</servlet-name>
+    <url-pattern>/servlet/ValidateEmail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/servlet/AdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadPhoto</servlet-name>
+    <url-pattern>/servlet/UploadPhoto</url-pattern>
+  </servlet-mapping>
+</web-app>
